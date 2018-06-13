@@ -8,10 +8,12 @@ function insert_value() {
 	var name= $("#name").val();		
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=insert";
 	var request = jQuery.ajax({
-		crossDomain: true,
+		headers: {
+                    'Access-Control-Allow-Origin': '*'
+                 },
 		url: url ,
 		method: "GET",
-		dataType: "json"
+		dataType: "jsonp"
 	});
 }
 
@@ -22,10 +24,12 @@ function update_value(){
 	var name= $("#name").val();		
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=update";
 	var request = jQuery.ajax({
-		crossDomain: true,
+		headers: {
+                    'Access-Control-Allow-Origin': '*'
+                 },
 		url: url ,
 		method: "GET",
-		dataType: "json"
+		dataType: "jsonp"
 	});		
 }
 
@@ -37,10 +41,12 @@ function delete_value(){
 	var name= $("#name").val();
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=delete";
 	var request = jQuery.ajax({
-		crossDomain: true,
+		headers: {
+                    'Access-Control-Allow-Origin': '*'
+                 },
 		url: url ,
 		method: "GET",
-		dataType: "json"
+		dataType: "jsonp"
 	});
 }
 
