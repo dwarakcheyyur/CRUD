@@ -8,10 +8,7 @@ function insert_value() {
 	var name= $("#name").val();		
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=insert";
 	var request = jQuery.ajax({
-		headers: {
-                    'Access-Control-Allow-Origin': '*',
-					'X-Content-Type-Options': 'nosniff'
-                 },
+		headers: [{'Access-Control-Allow-Origin': '*'},{'X-Content-Type-Options': 'nosniff'}],
 		url: url ,
 		method: "GET",
 		dataType: "jsonp"
@@ -25,10 +22,7 @@ function update_value(){
 	var name= $("#name").val();		
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=update";
 	var request = jQuery.ajax({
-		headers: {
-                    'Access-Control-Allow-Origin': '*',
-					'X-Content-Type-Options': 'nosniff'
-                 },
+		headers: [{'Access-Control-Allow-Origin': '*'},{'X-Content-Type-Options': 'nosniff'}],
 		url: url ,
 		method: "GET",
 		dataType: "jsonp"
@@ -43,10 +37,7 @@ function delete_value(){
 	var name= $("#name").val();
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=delete";
 	var request = jQuery.ajax({
-		headers: {
-                    'Access-Control-Allow-Origin': '*',
-					'X-Content-Type-Options': 'nosniff'
-                 },
+		headers: [{'Access-Control-Allow-Origin': '*'},{'X-Content-Type-Options': 'nosniff'}],
 		url: url ,
 		method: "GET",
 		dataType: "jsonp"
