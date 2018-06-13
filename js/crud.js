@@ -9,7 +9,8 @@ function insert_value() {
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=insert";
 	var request = jQuery.ajax({
 		headers: {
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': '*',
+					'X-Content-Type-Options: nosniff'
                  },
 		url: url ,
 		method: "GET",
@@ -25,7 +26,8 @@ function update_value(){
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=update";
 	var request = jQuery.ajax({
 		headers: {
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': '*',
+					'X-Content-Type-Options: nosniff'
                  },
 		url: url ,
 		method: "GET",
