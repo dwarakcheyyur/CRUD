@@ -42,7 +42,8 @@ function delete_value(){
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=delete";
 	var request = jQuery.ajax({
 		headers: {
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': '*',
+					'X-Content-Type-Options: nosniff'
                  },
 		url: url ,
 		method: "GET",
