@@ -1,4 +1,3 @@
-//addred to github
 jQuery( document ).ready(function( $ ) {
         // variable to hold request
         var request;
