@@ -10,7 +10,7 @@ function insert_value() {
 	var request = jQuery.ajax({
 		headers: {
                     'Access-Control-Allow-Origin': '*',
-					'X-Content-Type-Options: nosniff'
+					'X-Content-Type-Options': 'nosniff'
                  },
 		url: url ,
 		method: "GET",
@@ -27,7 +27,7 @@ function update_value(){
 	var request = jQuery.ajax({
 		headers: {
                     'Access-Control-Allow-Origin': '*',
-					'X-Content-Type-Options: nosniff'
+					'X-Content-Type-Options': 'nosniff'
                  },
 		url: url ,
 		method: "GET",
@@ -45,7 +45,7 @@ function delete_value(){
 	var request = jQuery.ajax({
 		headers: {
                     'Access-Control-Allow-Origin': '*',
-					'X-Content-Type-Options: nosniff'
+					'X-Content-Type-Options': 'nosniff'
                  },
 		url: url ,
 		method: "GET",
