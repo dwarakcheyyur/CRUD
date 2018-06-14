@@ -84,10 +84,10 @@ jQuery(document).ready(function($) {
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "https://script.google.com/a/education.cloudreign.in/macros/s/AKfycbzVjDYJNfGFKmBHGePKGWNQHFd4oAWiI0bWSWJgnQofWuM7w2c/exec",
+                url: "https://script.google.com/a/education.cloudreign.in/macros/s/AKfycbxHiX2zzZwsPJtNmsiCWgCG-GvjHNaQwClAeswvlUr5FgZRPZ4/exec",
                 data: str,
                 success: function(msg){
-                    console.log("Message result: "+msg.result);
+                    console.log(msg.result);
                     if(msg.result == "success") {
                         console.log("success");
                         console.log("OK")
