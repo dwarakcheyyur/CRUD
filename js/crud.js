@@ -1,5 +1,5 @@
 // Make an AJAX call to Google Script
-var script_url = "https://script.google.com/macros/s/AKfycbxK6OlTh5D_HSAkgoQl9CgnmRmXsGbzpqzTqiC0isiFhJl0yeKN/exec";
+var script_url = "https://script.google.com/macros/s/AKfycby9Q2GY5JZAQcODdDpmBWNEvBcqTewQcuRjh9bVTi26EDocsw4/exec";
 function insert_value() {		
 	$("#re").css("visibility","hidden");
 	document.getElementById("loader").style.visibility = "visible";
@@ -7,11 +7,10 @@ function insert_value() {
 	var id1= $("#id").val();
 	var name= $("#name").val();		
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=insert";
-	var request = jQuery.ajax({
-		headers: [{'Access-Control-Allow-Origin': '*'},{'X-Content-Type-Options': 'nosniff'}],
+	var request = jQuery.ajax({		
 		url: url ,
 		method: "GET",
-		dataType: "jsonp"
+		dataType: "json"
 	});
 }
 
@@ -22,10 +21,9 @@ function update_value(){
 	var name= $("#name").val();		
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=update";
 	var request = jQuery.ajax({
-		headers: [{'Access-Control-Allow-Origin': '*'},{'X-Content-Type-Options': 'nosniff'}],
 		url: url ,
 		method: "GET",
-		dataType: "jsonp"
+		dataType: "json"
 	});		
 }
 
@@ -37,10 +35,9 @@ function delete_value(){
 	var name= $("#name").val();
 	var url = script_url+"?callback=ctrlq&name="+name+"&id="+id1+"&action=delete";
 	var request = jQuery.ajax({
-		headers: [{'Access-Control-Allow-Origin': '*'},{'X-Content-Type-Options': 'nosniff'}],
 		url: url ,
 		method: "GET",
-		dataType: "jsonp"
+		dataType: "json"
 	});
 }
 

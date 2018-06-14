@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "https://script.google.com/a/education.cloudreign.in/macros/s/AKfycbzVjDYJNfGFKmBHGePKGWNQHFd4oAWiI0bWSWJgnQofWuM7w2c/exec",
+                url: "https://script.google.com/macros/s/AKfycby9Q2GY5JZAQcODdDpmBWNEvBcqTewQcuRjh9bVTi26EDocsw4/exec",
                 data: str,
                 success: function(msg){
                     console.log("Message result: "+msg.result);
