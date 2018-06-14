@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CloudReign Technologies</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+	</head>
+
+<body>
+  <form id="formCreate" >
+		   <h3>Create Record</h3>
+		   <p><label for="name">Name:</label>
+		   <input id="name" name="name" type="text" value="" /></p>
+		   <p><label for="comment">Comment:</label><br/>
+		   <textarea id="comment" name="comment" cols="40"></textarea></p>
+		   <input type="hidden" name="action" value="create">
+		   <p id="result"></p>
+		   <input type="submit" id="submit" value="Create" />
+		</form>
+		<hr/>
+		<form id="formRetrieve" >
+		 <h3>Retrieve Records</h3>
+		   <input type="hidden" name="action" value="retrieve">
+		   <input id="btnRetrieve" type="submit" value="Retrieve" />
+		 </form>
+		<br/>
+		<table id="datatable" border='1'>
+		</table>
+		 <div id="messageRetrieve"></div>
+		<hr/>
+		<form id="formUpdate" >
+		   <h3>Update Record</h3>
+		   <p><label for="tid">TID:</label>
+		   <input id="tid" name="tid" type="text" value="" disabled="true"/></p>
+		   <p><label for="name">Name:</label>
+		   <input id="name" name="name" type="text" value="" /></p>
+		   <p><label for="comment">Comment:</label><br/>
+		   <textarea id="comment" name="comment" cols="40"></textarea></p>
+		   <input type="hidden" name="action" value="update">
+		   <input type="submit" value="Update" />
+		   <p id="messageUpdate"></p>
+		</form>
+		<hr/>
+		<form id="formDelete" >
+			 <h3>Delete Record</h3>
+			 <p><label for="dtid">TID:</label>
+		   <input id="dtid" name="tid" type="text" value="" disabled="true"/></p>
+		   <p><label for="dname">Name:</label>
+		   <input id="dname" name="name" type="text" value="" disabled="true"/></p>
+		   <input type="hidden" name="action" value="delete">
+		   <input type="submit" value="Delete" />
+		   <p id="messageDelete"></p>
+		</form>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery.serialize-object.min.js"></script>
+  <script src="js/crud-new.js"></script>
+
+</body>
+
+</html>
