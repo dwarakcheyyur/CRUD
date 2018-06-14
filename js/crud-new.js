@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
                 type: "GET",
 				headers: {'Access-Control-Allow-Origin': '*'},
                 dataType: "json",
-                url: "https://script.google.com/a/education.cloudreign.in/macros/s/AKfycbzVjDYJNfGFKmBHGePKGWNQHFd4oAWiI0bWSWJgnQofWuM7w2c/exec",
+                url: "https://script.google.com/macros/s/AKfycbzVjDYJNfGFKmBHGePKGWNQHFd4oAWiI0bWSWJgnQofWuM7w2c/exec",
                 data: str,
                 success: function(msg){
                     console.log(msg.result);
